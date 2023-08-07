@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Maximizing Life's Three Core Elements Mind, Body, and Soul. This is a philosophical idea to try to find balance in life, although balance is not possible it can be a goal">
+  <meta name="keywords" content="Life-style, life-hack, elevate, investments, philosophical, Life, Skills, Balance, Wellness, Optimization">
+  <title>Study Time Manager</title>
+  <!-- external CSS link -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-cN3o1hE0CTvob8ihrVJ8tVmsn1yyTVNpQwWl5tE/NP0YX5PkSB+j+qF4H6nDYsl+2bs9TBk2vUm5IiFb5lTmg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <h1>Study Time Manager</h1>
+    <p>Embark on the Journey: You only get 168 hours</p>
+  </header>
+
+  <section class="pillars">
+    <div class="emoji">
+      <p>1. School Work 🧠</p>
+    </div>
+    <div class="emoji">
+      <p>2. Play Time 💪 📱</p>
+    </div>
+    <div class="emoji">
+      <p>3. Family Time 💖</p>
+    </div>
+  </section>
+
+  <section class="bottom">
+    <!-- LPC -->
+    <div class="calculator">
+      <div>
+        <h1>Begin Your Quest</h1>
+        <p>Embark on this quest to explore how you manage your time each week.</p>
+        <p> Choose your path wisely and remember, balance is the key to unlock your true potential!</p>
+      </div>
+      <ul>
+        <li>
+          <label for="Sleep">🌙 Sleep Time</label>
+          <input type="number" id="sleepTime" min="0" max="168" step="1" placeholder="e.g...40 hours per week">
+        </li>
+        <li>
+          <label for="Work">💼 School Time</label>
+          <input type="number" id="workTime" min="0" max="168" step="2" placeholder="e.g...10 hours per week">
+        </li>
+        <li>
+          <label for="Exercise">🏋️ Play Time / 📱 Screen Time</label>
+          <input type="number" id="exerciseTime" min="0" max="168" step="3" placeholder="e.g...10 hours per week">
+        </li>
+        <li>
+          <label for="Family">👪 Family Time</label>
+          <input type="number" id="familyTime" min="0" max="168" step="4" placeholder="e.g...10 hours per week">
+        </li>
+        <li>
+          <label for="Side Hustles">💡 Homework Time </label>
+          <input type="number" id="sideHustlesTime" min="0" max="168" step="5" placeholder="e.g...10 hours per week">
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="chart">
+    <div class="graphic">
+      <!-- Time Graphic -->
+      <div class="time">
+        <h1>Your Time Chart</h1>
+      </div>
+  
+      <div class="time-manager">
+        <!-- Remaining hours will be displayed here -->
+      </div>
+      <!-- Add a <div> to display remaining time -->
+      <div id="remainingTime"></div>
+      <!-- Add a <div> to display hours recorded per group -->
+      <div id="hoursPerGroup"></div>
+    </div>
+    <!-- Add the canvas element for the pie chart -->
+    <canvas id="time-chart" class="chart-canvas" width="200px" height="100px"></canvas>
+  </section>
+
+  <script type="text/javascript" src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <footer>
+    <span> Designed by noebuilds </span>
+  </footer>
+</body>
+
+</html>
